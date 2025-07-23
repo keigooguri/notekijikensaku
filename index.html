@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>note記事検索</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>note記事検索</h1>
+        <p>検索したいハッシュタグを選択してください。</p>
+        <div class="tags-container">
+            <button class="tag-btn" data-tag="人材確保と定着"># 人材確保と定着</button>
+            <button class="tag-btn" data-tag="家族地域行政"># 家族地域行政</button>
+            <button class="tag-btn" data-tag="収益の安定化"># 収益の安定化</button>
+            <button class="tag-btn" data-tag="職員マネジメント"># 職員マネジメント</button>
+            <button class="tag-btn" data-tag="未来への不安"># 未来への不安</button>
+        </div>
+        <button id="search-btn">検索</button>
+        <div id="results-container">
+            <h2>検索結果</h2>
+            <ul id="results-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
