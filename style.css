@@ -1,0 +1,140 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f0f4f8; /* 非常に薄い青みがかったグレー */
+    color: #212529; /* 濃いダークグレーのテキスト色 */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff; /* 白のコンテナ */
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* 影をさらに控えめに */
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #212529; /* 濃いダークグレーのタイトル */
+    font-weight: 800; /* より太く */
+}
+
+p {
+    font-size: 17px;
+    color: #212529; /* 濃いダークグレーのテキスト */
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.tag-btn {
+    background-color: #e3f2fd; /* 非常に薄い青 */
+    color: #212529; /* 濃いダークグレーの文字 */
+    border: 1px solid #90a4ae; /* 柔らかいボーダー */
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03); /* 影をさらに控えめに */
+}
+
+.tag-btn:hover {
+    background-color: #bbdefb; /* ホバーで少し濃く */
+    border-color: #607d8b;
+    transform: translateY(-2px);
+}
+
+.tag-btn.active {
+    background-color: #607d8b; /* アクティブで落ち着いたブルーグレー */
+    color: #fff;
+    border-color: #607d8b;
+    box-shadow: 0 2px 8px rgba(96, 125, 139, 0.2); /* 影を調整 */
+}
+
+#search-btn {
+    background-color: #607d8b; /* 検索ボタンも落ち着いたブルーグレー */
+    color: #fff;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    width: 100%;
+    max-width: 350px;
+    letter-spacing: 1px;
+}
+
+#search-btn:hover {
+    background-color: #455a64; /* ホバーで濃いブルーグレー */
+    transform: translateY(-2px);
+}
+
+#results-container {
+    margin-top: 50px;
+    text-align: left;
+    background-color: #ffffff; /* 結果コンテナも白 */
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06); /* 影を調整 */
+}
+
+#results-container h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #607d8b; /* 結果見出しも落ち着いたブルーグレー */
+    border-bottom: 2px solid #90a4ae; /* 柔らかい青みがかった線 */
+    padding-bottom: 12px;
+    font-weight: 600;
+}
+
+#results-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#results-list li {
+    background-color: #f8f9fa; /* 非常に薄いグレーの背景 */
+    border: 1px solid #e0e0e0; /* 非常に薄いグレーのボーダー */
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 15px;
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#results-list li:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transform: translateY(-3px);
+}
+
+#results-list a {
+    text-decoration: none;
+    color: #212529; /* 濃いダークグレーのリンク */
+    font-weight: 600;
+    font-size: 17px;
+    display: block;
+}
+
+#results-list a:hover {
+    text-decoration: underline;
+    color: #607d8b;
+}
